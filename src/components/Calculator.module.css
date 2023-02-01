@@ -1,0 +1,82 @@
+.calcBody {
+	display: block;
+	background-color: #1e40af;
+	padding: 2rem;
+	border: 2px solid #292524;
+	border-radius: 20px;
+	margin-top: 2rem;
+	width: 24rem;
+}
+
+.calcGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 5rem);
+	grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.calcGrid > button {
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid #d6d3d1;
+	border-radius: 20px;
+	outline: none;
+	background-color: #78716c;
+	margin: 0.1rem;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.calcGrid > button:hover,
+.calcGrid > button:focus {
+	background-color: #57534e;
+}
+
+.calcGrid > button:active {
+	transform: scale(0.97);
+}
+
+.output {
+	grid-column: 1 / -1;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 0.75rem;
+	border: 2px solid #292524;
+	border-radius: 20px;
+	word-wrap: break-word;
+	word-break: break-all;
+	margin-bottom: 0.2rem;
+}
+
+.output .prevOp {
+	color: #f5f5f4;
+	font-size: 1.5rem;
+	padding: 0.1rem;
+	margin: 0;
+}
+
+.output .currOp {
+	color: #fafaf9;
+	font-size: 2.5rem;
+	padding: 0.1rem;
+	margin: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.spanTwo {
+	grid-column: span 2;
+}
+
+@media screen and (min-width: 500px) {
+	.calcBody {
+		width: 28rem;
+		margin-top: 6rem;
+	}
+
+	.calcGrid {
+		grid-template-columns: repeat(4, 6rem);
+		grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+	}
+}

@@ -1,0 +1,12 @@
+.header {
+	text-align: center;
+	width: 100%;
+	background-color: #1e40af;
+}
+
+.header > h1 {
+	margin: 0;
+	padding: 1rem 2rem 1rem;
+	overflow-wrap: break-word;
+	line-height: 2rem;
+}

@@ -1,0 +1,11 @@
+.bodyWrapper {
+	display: flex;
+	justify-content: center;
+	width: min-content;
+	height: min-content;
+	margin: 0 auto;
+}
+
+.disclaimer {
+	text-align: center;
+}

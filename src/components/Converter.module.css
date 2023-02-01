@@ -1,0 +1,55 @@
+.converterWrapper {
+	margin-top: 2rem;
+}
+
+.inputGroup__main {
+	display: flex;
+}
+.inputGroup {
+	display: inline-block;
+	margin: 0 0.5rem;
+}
+
+.inputGroup > label,
+input {
+	display: block;
+}
+
+.label {
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+	text-align: center;
+}
+
+.input {
+	font-size: 1.5rem;
+	width: 7rem;
+	margin: 0.25rem;
+	text-align: center;
+	appearance: none;
+}
+
+.arrow {
+	font-size: 2rem;
+}
+
+.convertValue {
+	text-align: center;
+}
+.rootInput {
+	display: inline-block;
+	width: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+	.converterWrapper {
+		margin-top: 6rem;
+	}
+	.inputGroup {
+		margin: 0 1rem;
+	}
+	.input {
+		font-size: 2rem;
+		width: 9rem;
+	}
+}
