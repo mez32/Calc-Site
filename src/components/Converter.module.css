@@ -17,6 +17,7 @@ input {
 
 .label {
 	font-size: 1.5rem;
+	font-weight: bold;
 	padding-bottom: 0.5rem;
 	text-align: center;
 }
@@ -27,10 +28,17 @@ input {
 	margin: 0.25rem;
 	text-align: center;
 	appearance: none;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.arrowWrapper {
+	margin-top: 1.75rem;
 }
 
 .arrow {
-	font-size: 2rem;
+	fill: currentColor;
 }
 
 .convertValue {
@@ -39,6 +47,9 @@ input {
 .rootInput {
 	display: inline-block;
 	width: 2rem;
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -51,5 +62,8 @@ input {
 	.input {
 		font-size: 2rem;
 		width: 9rem;
+	}
+	.arrowWrapper {
+		margin-top: 2rem;
 	}
 }

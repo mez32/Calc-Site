@@ -37,7 +37,17 @@ const Converter: React.FC = () => {
 							onChange={(e) => convertPx(parseFloat(e.target.value))}
 						/>
 					</div>
-					<p className={classes.arrow}>{'<=>'}</p>
+					<div className={classes.arrowWrapper}>
+						<svg
+							className={classes.arrow}
+							xmlns='http://www.w3.org/2000/svg'
+							height='48'
+							width='48'
+						>
+							<path d='M13.55 42 4 32.45l9.6-9.6 2.1 2.1-6 6h32.45v3H9.7l5.95 5.95Zm20.9-16.85-2.1-2.1 5.95-5.95H5.85v-3H38.3l-6-6L34.4 6l9.6 9.6Z' />
+						</svg>
+					</div>
+
 					<div className={classes.inputGroup}>
 						<label className={classes.label} htmlFor='rem'>
 							REM
