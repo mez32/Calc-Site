@@ -46,15 +46,32 @@ input {
 }
 .rootInput {
 	display: inline-block;
-	width: 2rem;
+	width: 2.5rem;
 	border: 1px solid black;
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
+	text-align: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-height: 950px) {
 	.converterWrapper {
 		margin-top: 6rem;
+	}
+	.inputGroup {
+		margin: 0 1rem;
+	}
+	.input {
+		font-size: 2rem;
+		width: 9rem;
+	}
+	.arrowWrapper {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (min-height: 1000px) {
+	.converterWrapper {
+		margin-top: 4rem;
 	}
 	.inputGroup {
 		margin: 0 1rem;

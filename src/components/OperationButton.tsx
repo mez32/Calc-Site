@@ -1,17 +1,6 @@
 import React from 'react'
 import { ACTIONS } from '../reducers/calcReducer'
-
-interface DispatchProps {
-	type: string
-	payload: {
-		operation: string
-	}
-}
-
-interface Props {
-	dispatch: (payload: DispatchProps) => void
-	operation: string
-}
+import { Props } from '../types/operationsButton'
 
 const OperationButton: React.FC<Props> = ({ operation, dispatch }) => {
 	return (

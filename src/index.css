@@ -30,17 +30,22 @@ input::-webkit-inner-spin-button {
 
 input[type='number'] {
 	appearance: none;
-	-moz-appearance: textfield;
 }
 
 .dark {
-	color-scheme: light dark;
-	color: #f5f5f4;
+	color: #e7e5e4;
 	background-color: #1c1917;
 }
 
+.dark input[type='number'] {
+	background-color: #78716c;
+}
+
 .light {
-	color-scheme: light;
 	color: #1c1917;
+	background-color: #e7e5e4;
+}
+
+.light input[type='number'] {
 	background-color: #f5f5f4;
 }

@@ -1,17 +1,6 @@
 import React from 'react'
 import { ACTIONS } from '../reducers/calcReducer'
-
-interface DispatchProps {
-	type: string
-	payload: {
-		digit: string
-	}
-}
-
-interface Props {
-	dispatch: (payload: DispatchProps) => void
-	digit: string
-}
+import { Props } from '../types/digitButton'
 
 const DigitButton: React.FC<Props> = ({ dispatch, digit }) => {
 	return (

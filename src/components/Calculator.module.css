@@ -19,11 +19,11 @@
 .calcGrid > button {
 	cursor: pointer;
 	font-size: 2rem;
-	border: 1px solid #d6d3d1;
+	border: 1px solid #f5f5f4;
 	border-radius: 20px;
 	outline: none;
 	background-color: #78716c;
-	color: #f5f5f4;
+	color: #e7e5e4;
 	margin: 0.1rem;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
@@ -72,7 +72,7 @@
 	grid-column: span 2;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-height: 950px) {
 	.calcBody {
 		width: 28rem;
 		margin-top: 6rem;
@@ -81,5 +81,11 @@
 	.calcGrid {
 		grid-template-columns: repeat(4, 6rem);
 		grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+	}
+}
+
+@media screen and (min-height: 1000px) {
+	.calcBody {
+		margin-top: 4rem;
 	}
 }

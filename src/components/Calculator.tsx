@@ -18,6 +18,11 @@ const formatOperand = (operand: string | null | undefined) => {
 
 	if (decimal == null) return INTEGER_FORMATTER.format(Number(integer))
 
+	if (decimal.length > 6) {
+		const formattedDecimal = decimal.slice(0, 6)
+		return `${INTEGER_FORMATTER.format(Number(integer))}.${formattedDecimal}`
+	}
+
 	return `${INTEGER_FORMATTER.format(Number(integer))}.${decimal}`
 }
 
